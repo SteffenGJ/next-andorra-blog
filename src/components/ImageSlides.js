@@ -13,6 +13,8 @@ register();
 const ImageSlides = ({ imageURLs }) => {
   const [open, setOpen] = useState(false);
 
+  const imageLoader = ({ src }) => src;
+
   return (
     <div>
       <swiper-container slides-per-view="1" navigation="true" pagination="true">
@@ -22,7 +24,13 @@ const ImageSlides = ({ imageURLs }) => {
               className="flex items-center justify-center cursor-pointer"
               onClick={() => setOpen((prev) => !prev)}
             >
-              <Image src={urle} alt={`Image`} width={300} height={400} />
+              <Image
+                src={urle}
+                alt={`Image`}
+                width={300}
+                height={400}
+                loader={imageLoader}
+              />
             </div>
           </swiper-slide>
         ))}

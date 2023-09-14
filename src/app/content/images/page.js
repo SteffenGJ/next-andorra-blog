@@ -17,7 +17,7 @@ export default function Images() {
       });
   });
 
-  if (images.length > 1) {
+  if (images.length > 0) {
     return (
       <div>
         <Header second={true} />

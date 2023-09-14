@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import { register } from "swiper/element/bundle";
 import CloseIcon from "@mui/icons-material/Close";
@@ -5,6 +7,8 @@ import CloseIcon from "@mui/icons-material/Close";
 register();
 
 const ImageGallery = ({ closer, urls }) => {
+  const imageLoader = ({ src }) => src;
+
   return (
     <div className="bg-black w-screen h-screen popup-content flex flex-col items-end">
       <button onClick={closer} className="text-white p-4">
@@ -25,6 +29,7 @@ const ImageGallery = ({ closer, urls }) => {
                     alt="Blog image"
                     fill={true}
                     src={url}
+                    loader={imageLoader}
                   />
                 </div>
               </swiper-slide>
