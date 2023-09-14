@@ -22,7 +22,7 @@ const ImageSlides = ({ imageURLs }) => {
               className="flex items-center justify-center cursor-pointer"
               onClick={() => setOpen((prev) => !prev)}
             >
-              <Image src={url} alt={`Image`} width={300} height={500} />
+              <Image src={url} alt={`Image`} width={300} height={400} />
             </div>
           </swiper-slide>
         ))}
