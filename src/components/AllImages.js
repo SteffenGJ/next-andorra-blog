@@ -10,11 +10,6 @@ const AllImages = ({ urls }) => {
   const cleanUrls = urls.map((url) => url.src);
   const [open, setOpen] = useState(false);
   return (
-    // <div>
-    //   {urls.map((url) => (
-    //     <Image key={url} src={url} alt="Blog image" height={500} width={300} />
-    //   ))}
-    // </div>
     <div>
       <div className="p-4">
         <PhotoAlbum

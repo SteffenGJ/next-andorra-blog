@@ -1,8 +1,6 @@
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
-  //py-32 sm:py-48 lg:py-56
   return (
     <main className="bg-[url('/forside.jpg')] bg-cover min-h-screen">
       <div className="relative isolate px-6 pt-14 lg:px-8 bg-white opacity-90 min-h-screen">

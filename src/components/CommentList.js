@@ -13,7 +13,7 @@ const CommentList = ({ postId, changeComment }) => {
       .then((res) => {
         setComments(res.data.comments);
       });
-  }, [changeComment]);
+  }, [changeComment, postId]);
 
   return (
     <div>

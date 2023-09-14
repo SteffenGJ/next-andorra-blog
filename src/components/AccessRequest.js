@@ -6,7 +6,6 @@ import url from "../../url";
 
 const AccessRequest = ({ username, userId, setRequests }) => {
   const handleClick = async () => {
-    console.log("Click");
     setRequests((prev) => prev.filter((req) => req._id !== userId));
     await axios.post(`${url}/api/admin/acceptUser/${userId}`);
   };

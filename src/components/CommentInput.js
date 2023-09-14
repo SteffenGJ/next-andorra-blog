@@ -3,7 +3,7 @@
 import makeNotification from "@/functions/makeNotification";
 import placeComment from "@/functions/placeComment";
 import { AddComment } from "@mui/icons-material";
-import { format, parseISO } from "date-fns";
+import { format } from "date-fns";
 import { useState } from "react";
 
 const CommentInput = ({
@@ -18,9 +18,7 @@ const CommentInput = ({
   const handleClick = () => {
     setIsCommenting(false);
     const now = new Date();
-    console.log(now, "NOW");
     const date = format(now, "dd.MM.yyyy");
-    console.log(date);
     const comment = {
       text: value,
       date: date,

@@ -46,8 +46,16 @@ export default function Content() {
   }
 
   return (
-    <div>
+    <div className="w-full">
       <Header first={true} />
+      <div className="text-center w-full">
+        <p className="my-2">Loading...</p>
+        <p>
+          Disclaimer: Hvis det tager lang tid om at loade, så skyldes det ikke
+          at hjemmesiden er dårligt bygget, men nærmere fordi jeg bruger gratis
+          rendering. Hav tålmodigheden i orden.
+        </p>
+      </div>
     </div>
   );
 }

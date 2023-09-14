@@ -3,7 +3,6 @@ import { useState } from "react";
 import Comment from "./Comment";
 import ImageSlides from "./ImageSlides";
 import {
-  ArrowDownward,
   ExpandLess,
   ExpandMore,
   ThumbUp,
@@ -102,22 +101,6 @@ const BlogPost = ({ data }) => {
         <CommentList postId={data._id} changeComment={changeComment} />
       )}
     </div>
-    // <div className="bg-white p-4 rounded-xl shadow-lg">
-    //   <h1 className="text-3xl">{data.title}</h1>
-    //   <p className="text-sm text-gray-500">{data.date}</p>
-    //   {data.imageURLs.map((url) => (
-    //     <Image key={url} src={url} alt="Image" width={300} height={500} />
-    //   ))}
-    //   <p>{data.text}</p>
-    //   <p>{data.likes}</p>
-    //   <div className="my-5 border-t border-b w-full flex items-center justify-evenly p-4 gap-4">
-    //     <button className="p-2 rounded w-full bg-gray-100">Like</button>
-    //     <button className="p-2 rounded w-full bg-gray-100">Comment</button>
-    //   </div>
-    //   {data.comments.map((com) => (
-    //     <Comment key={com.id} commentData={com} />
-    //   ))}
-    // </div>
   );
 };
 

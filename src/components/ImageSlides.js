@@ -14,17 +14,6 @@ const ImageSlides = ({ imageURLs }) => {
   const [open, setOpen] = useState(false);
 
   return (
-    // <Swiper
-    //   navigation
-    //   spaceBetween={20} // Adjust as needed
-    //   slidesPerView={1} // Show one image at a time
-    // >
-    //   {imageURLs.map((url, index) => (
-    //     <SwiperSlide key={index}>
-    //       <Image src={url} alt={`Image ${index}`} width={300} height={500} />
-    //     </SwiperSlide>
-    //   ))}
-    // </Swiper>
     <div>
       <swiper-container slides-per-view="1" navigation="true" pagination="true">
         {imageURLs.map((url) => (
