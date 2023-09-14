@@ -9,6 +9,9 @@ import ImageGallery from "./ImageGallery";
 const AllImages = ({ urls }) => {
   const cleanUrls = urls.map((url) => url.src);
   const [open, setOpen] = useState(false);
+
+  const imageLoader = ({ src }) => src;
+
   return (
     <div>
       <div className="p-4">
@@ -26,6 +29,7 @@ const AllImages = ({ urls }) => {
                 fill
                 className="rounded-md"
                 src={photo.src}
+                loader={imageLoader}
               />
             </div>
           )}
