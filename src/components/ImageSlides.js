@@ -16,13 +16,13 @@ const ImageSlides = ({ imageURLs }) => {
   return (
     <div>
       <swiper-container slides-per-view="1" navigation="true" pagination="true">
-        {imageURLs.map((url) => (
-          <swiper-slide key={url}>
+        {imageURLs.map((urle) => (
+          <swiper-slide key={urle}>
             <div
               className="flex items-center justify-center cursor-pointer"
               onClick={() => setOpen((prev) => !prev)}
             >
-              <Image src={url} alt={`Image`} width={300} height={400} />
+              <Image src={urle} alt={`Image`} width={300} height={400} />
             </div>
           </swiper-slide>
         ))}
