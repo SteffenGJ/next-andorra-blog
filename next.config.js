@@ -5,7 +5,7 @@ const nextConfig = {
       {
         protocol: "https",
         hostname: "andorrabloggen.onrender.com",
-        port: "",
+        port: "41985",
       },
     ],
   },
