@@ -28,6 +28,12 @@ export default function Home() {
               >
                 Gå til indhold <span aria-hidden="true">→</span>
               </Link>
+              <Link
+                href={"/login"}
+                className="text-sm font-semibold leading-6 text-gray-900"
+              >
+                Log ind
+              </Link>
             </div>
           </div>
         </div>
